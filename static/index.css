@@ -61,7 +61,7 @@ header:before{
     -webkit-transform: translateZ(0); backface-visibility: hidden;
   transform: translateZ(0);
   width:100%;
-  background:#1B2030 url(https://images.unsplash.com/photo-1529963183134-61a90db47eaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) 50% 0 no-repeat;
+  background:#1B2030 url(https://images.unsplash.com/photo-1495592822108-9e6261896da8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80) 50% 0 no-repeat;
   background-size:100%;
   background-attachment:fixed;
   animation: grow 110s  linear 10ms infinite;
