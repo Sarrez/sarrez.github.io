@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+
+:root {
+  --wrapper_value: 5%;
+}
+html,body{
+  margin:0;
+  height:120%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+/**********************HEADER/NAV**********************/
+.nav li {
+  display: inline-flex;
+  padding: 0px 20px;
+  font-size: large;
+}
+
+.nav li a {
+  transition: all 1s ease 0s;
+}
+
+.nav li a:hover {
+  color: #0088A9;
+}
+a{
+  text-decoration:none
+}
+header{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height:45vw;
+  min-height:400px;
+  max-height:500px;
+  min-width:300px;
+  color:#eee;
+  padding: 2vw var(--wrapper_value);
+}
+header:after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
+}
+header:before{
+  content:"";
+  width:100%;
+  height:200%;
+  position:absolute;
+  top:0;
+  left:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); backface-visibility: hidden;
+  transform: translateZ(0);
+  background:#1B2030 url(https://images.unsplash.com/photo-1571993142257-eae0b44cf0f1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ) 50% 0 no-repeat;
+  background-size:100%;
+  background-attachment:fixed;
+  animation: grow 110s  linear 10ms infinite;
+  transition:all 0.4s ease-in-out;
+  z-index:-2
+}
+header a{
+  color:#eee
+}
+.info{
+  flex: 0 0 auto;
+  width:100%;
+  padding:15% 10% 0 10%;
+  text-align:center;
+  text-shadow:0 2px 3px rgba(0,0,0,0.2)
+}
+
+.info h4{
+  font-size:0.7em
+}
+
+@keyframes grow{
+  0% { transform: scale(1) translateY(0px)}
+  50% { transform: scale(1.2) translateY(-400px)}
+}
+/**********************HEADER/NAV**********************/
+
+/**********************PROJECTS**********************/
+.projects{  
+  padding:5% 10%;
+  text-align:justify
+}
+.projects h1{
+  border-bottom: solid #22242b;
+}
+.links a{
+  padding: 1%;
+}
+/**********************HEADER/NAV**********************/
+
+/**********************FOOTER**********************/
+footer {
+  width: 100%;
+  background-color:rgb(226, 224, 224);
+  clear:both;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  margin-top: 50px;
+  height: 70px;
+}
+/**********************HEADER/NAV**********************/
