@@ -2,46 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | DevOps Engineer Portfolio</title>
     <link rel="stylesheet" href="static/index.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>            
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-    <title>Document</title>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-          <div class="navbar">
-            <ul class="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
+        <div class="container">
+            <div class="logo">
+                <a href="#">Your Logo</a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
-          <div class="info">
-            <h1>TEXT HERE</h1>
-            <div class="links">
-            <a href="https://www.linkedin.com/in/markos-sarris-ba5849242/"  target="_blank"><i class='fa fa-linkedin'></i></a>
-
-            <a href="https://github.com/Sarrez"  target="_blank"><i class='fa fa-github'></i></a>
-        </div>
-
-          </div>
-        
     </header>
-    <section class="projects">
-        <h1>Projects</h1>
-        <h3>1. Using YOLOv5 for object detection</h3>
-        <p>coming soon...</p>
-        <h3>2. Deep learning models for image classification</h3>
-        <p>coming soon...</p>
-        <h3>3. Building a search engine for a large dataset</h3>
-        <p>coming soon...</p>
-        <h3>4. Single-document keyword extraction using graph-based methods</h3>
-        <p>coming soon...</p>
+
+    <!-- Home Section -->
+    <!-- <section id="home" class="hero">
+        <div class="container">
+            <h1>Hi, I'm Your Name</h1>
+            <p>DevOps Engineer | Automation Enthusiast | Cloud Advocate</p>
+        </div>
+    </section> -->
+    
+    <!-- Parallax Section -->
+    <section id="parallax" class="parallax">
+        <div class="parallax-content">
+        <h1 class="parallax-text">Welcome to My Portfolio</h1>
+        <p class="parallax-text">Explore My Projects and Skills</p>
+        </div>
     </section>
-    <footer> 
-        <p> 2023 - Computer Science Department, Aristotle University of Thessaloniki </p>
-      </footer>
+  
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate DevOps Engineer with experience in cloud computing, automation, and CI/CD pipelines. My goal is to bridge the gap between development and operations by implementing efficient, scalable, and automated solutions.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <!-- Projects Title -->
+        <h2 class="projects-title">My Projects</h2>
+        
+        <div class="projects-wrapper">
+            <button class="scroll-btn left-btn" id="scroll-left">&lt;</button>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>CI/CD Pipeline with Jenkins</h3>
+                    <p>Automated the software delivery process using Jenkins, Docker, and Kubernetes. Integrated GitHub for version control and implemented deployment to AWS EC2 instances.</p>
+                    <button class="btn">View Project</button>
+                </div>
+                <div class="project">
+                    <h3>Cloud Infrastructure Setup</h3>
+                    <p>Designed and implemented scalable cloud infrastructure using AWS and Terraform. Configured monitoring and security best practices for a production-ready system.</p>
+                    <button class="btn">View Project</button>
+                </div>
+                <div class="project">
+                    <h3>DevOps Dashboard</h3>
+                    <p>Created a centralized DevOps dashboard for monitoring CI/CD pipelines, system performance, and alerting, integrating tools like Grafana and Prometheus.</p>
+                    <button class="btn">View Project</button>
+                </div>
+                <div class="project">
+                    <h3>DevOps Dashboard</h3>
+                    <p>Created a centralized DevOps dashboard for monitoring CI/CD pipelines, system performance, and alerting, integrating tools like Grafana and Prometheus.</p>
+                    <button class="btn">View Project</button>
+                </div>
+                <div class="project">
+                    <h3>DevOps Dashboard</h3>
+                    <p>Created a centralized DevOps dashboard for monitoring CI/CD pipelines, system performance, and alerting, integrating tools like Grafana and Prometheus.</p>
+                    <button class="btn">View Project</button>
+                </div>
+                <div class="project">
+                    <h3>DevOps Dashboard</h3>
+                    <p>Created a centralized DevOps dashboard for monitoring CI/CD pipelines, system performance, and alerting, integrating tools like Grafana and Prometheus.</p>
+                    <button class="btn">View Project</button>
+                </div>
+            </div>
+            <button class="scroll-btn right-btn" id="scroll-right">&gt;</button>
+        </div>
+    </section>
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
